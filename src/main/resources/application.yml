@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/stockdb
+    url: jdbc:postgresql://localhost:5433/stockdb
     username: devuser
     password: devpassword
     driver-class-name: org.postgresql.Driver
@@ -21,4 +21,7 @@ server:
 app:
   ai:
     summary-enabled: true
-    summary-cache-key-prefix: ai-summary:
+    summary-cache-key-prefix: "ai-summary:"
+  finnhub:
+    api-key: d7om391r01qsb7bfek20d7om391r01qsb7bfek2g
+    base-url: https://finnhub.io/api/v1
